@@ -1,6 +1,6 @@
 {
   "name": "try-githubrelease",
-  "version": "0.8.2",
+  "version": "0.8.1",
   "main": "main.js",
   "description": "try-githubRelease",
   "author": "Matt Haggard",
@@ -19,7 +19,7 @@
   "build": {
     "appId": "com.github.Ectracker.try-githubRelease",
     "mac": {
-      "category": "public.app-category.education"
+      "category": "your.app.category.type"
     },
     "win": {
       "target": "nsis"

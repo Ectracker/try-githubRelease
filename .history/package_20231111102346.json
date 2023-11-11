@@ -1,8 +1,8 @@
 {
-  "name": "try-githubrelease",
-  "version": "0.8.2",
+  "name": "electron-updater-example",
+  "version": "0.8.1",
   "main": "main.js",
-  "description": "try-githubRelease",
+  "description": "electron-updater example project",
   "author": "Matt Haggard",
   "scripts": {
     "publish": "electron-builder -p always"
@@ -17,15 +17,20 @@
     "electron-updater": "^4.3.9"
   },
   "build": {
-    "appId": "com.github.Ectracker.try-githubRelease",
+    "appId": "com.github.iffy.electronupdaterexample",
+    "afterSign": "./build/notarize.js",
     "mac": {
-      "category": "public.app-category.education"
+      "category": "your.app.category.type"
     },
     "win": {
       "target": "nsis"
     },
     "nsis": {
       "oneClick": false
+    },
+    "linux": {
+      "category": "your.app.category.type",
+      "target": "AppImage"
     },
     "publish": [{
       "provider": "github",
